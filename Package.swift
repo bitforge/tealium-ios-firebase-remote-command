@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
@@ -10,8 +10,8 @@ let package = Package(
         .library(name: "TealiumFirebase", targets: ["TealiumFirebase"])
     ],
     dependencies: [
-        .package(name: "TealiumSwift", url: "https://github.com/tealium/tealium-swift", from: "2.3.0"),
-        .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk.git", from: "8.0.0")
+        .package(name: "TealiumSwift", url: "https://github.com/tealium/tealium-swift", .upToNextMajor(from: "2.6.0")),
+        .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMajor(from: "8.0.0"))
     ],
     targets: [
         .target(
@@ -19,14 +19,14 @@ let package = Package(
             dependencies: [
                 .product(name: "FirebaseAnalytics", package: "Firebase", condition: .when(platforms: [.iOS])),
                 .product(name: "TealiumCore", package: "TealiumSwift"),
-                .product(name: "TealiumCollect", package: "TealiumSwift"),
-                .product(name: "TealiumRemoteCommands", package: "TealiumSwift"),
-                .product(name: "TealiumTagManagement", package: "TealiumSwift")
+                .product(name: "TealiumRemoteCommands", package: "TealiumSwift")
             ],
-            path: "./Sources"),
+            path: "./Sources",
+            exclude: ["Support"]),
         .testTarget(
             name: "TealiumFirebaseTests",
             dependencies: ["TealiumFirebase"],
-            path: "./Tests")
+            path: "./Tests",
+            exclude: ["Support"])
     ]
 )

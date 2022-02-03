@@ -13,12 +13,14 @@ import FirebaseAnalytics
     import TealiumSwift
 #else
     import TealiumCore
-    import TealiumTagManagement
     import TealiumRemoteCommands
 #endif
 
 public class FirebaseRemoteCommand: RemoteCommand {
 
+    override public var version: String? {
+        return FirebaseConstants.version
+    }
     var firebaseInstance: FirebaseCommand?
 
     public init(firebaseInstance: FirebaseCommand = FirebaseInstance(), type: RemoteCommandType = .webview) {
