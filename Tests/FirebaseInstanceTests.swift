@@ -189,6 +189,28 @@ class FirebaseInstanceTests: XCTestCase {
         wait(for: [expect], timeout: 2.0)
     }
     
+    func testInitiateConversionMeasurementWithValues() {
+        let expect = expectation(description: "initiate conversion measurement should run")
+        let payload: [String: Any] = ["command_name": "initiateconversionmeasurement", "param_email_address": "email@domain.com"]
+        if let response = HttpTestHelpers.createRemoteCommandResponse(type: .webview, commandId: "firebase", payload: payload) {
+            firebaseCommand.completion(response)
+            XCTAssertEqual(1, firebaseInstance.initateConversionCount)
+        }
+        expect.fulfill()
+        wait(for: [expect], timeout: 2.0)
+    }
+
+    func testInitiateConversionMeasurementWithoutValues() {
+        let expect = expectation(description: "initiate conversion measurement should not run")
+        let payload: [String: Any] = ["command_name": "initiateconversionmeasurement"]
+        if let response = HttpTestHelpers.createRemoteCommandResponse(type: .webview, commandId: "firebase", payload: payload) {
+            firebaseCommand.completion(response)
+            XCTAssertEqual(0, firebaseInstance.initateConversionCount)
+        }
+        expect.fulfill()
+        wait(for: [expect], timeout: 2.0)
+    }
+    
     // MARK: JSON Remote Command Tests
     func testCreateAnalyticsConfigWithoutValuesJSON() {
         let expect = expectation(description: "firebase config should run")
@@ -378,12 +400,58 @@ class FirebaseInstanceTests: XCTestCase {
         wait(for: [expect], timeout: 2.0)
     }
     
+    func testInitiateConversionMeasurementWithValuesJSON() {
+        let expect = expectation(description: "initiate conversion measurement should run")
+        let payload: [String: Any] = ["command_name": "initiateconversionmeasurement", "param_email_address": "email@domain.com"]
+        if let response = HttpTestHelpers.createRemoteCommandResponse(type: .JSON, commandId: "firebase", payload: payload) {
+            firebaseCommand.completion(response)
+            XCTAssertEqual(1, firebaseInstance.initateConversionCount)
+        }
+        expect.fulfill()
+        wait(for: [expect], timeout: 2.0)
+    }
+
+    func testInitiateConversionMeasurementWithoutValuesJSON() {
+        let expect = expectation(description: "initiate conversion measurement should not run")
+        let payload: [String: Any] = ["command_name": "initiateconversionmeasurement"]
+        if let response = HttpTestHelpers.createRemoteCommandResponse(type: .JSON, commandId: "firebase", payload: payload) {
+            firebaseCommand.completion(response)
+            XCTAssertEqual(0, firebaseInstance.initateConversionCount)
+        }
+        expect.fulfill()
+        wait(for: [expect], timeout: 2.0)
+    }
+    
     func testCustomEventParameters() {
         let expect = expectation(description: "set user id should not run")
         let payload: [String: Any] = ["command_name": "logevent", "firebase_event_name": "mobile_hoteldetails", "event": ["param_city": "San Diego","param_productdisplaytype": "Opaque","param_numrooms": 1,"param_state": "CA","param_numadults": 2,"param_country": "US","param_numchildren": 0,"param_checkout_yyyymmdd": "2021-05-13","param_checkin_yyyymmdd": "2021-05-12","param_dta": 0]]
         if let response = HttpTestHelpers.createRemoteCommandResponse(type: .JSON, commandId: "firebase", payload: payload) {
             firebaseCommand.completion(response)
             XCTAssertEqual(1, firebaseInstance.logEventWithParamsCallCount)
+        }
+        expect.fulfill()
+        wait(for: [expect], timeout: 2.0)
+    }
+    
+    func testSetDefaultParameters() {
+        let expect = expectation(description: "set user id should not run")
+        let defaultParameters: [String: Any]? = ["defaultParam1": "defaultValue1"]
+        let payload: [String: Any] = ["command_name": "setdefaultparameters", "default": defaultParameters as Any]
+        if let response = HttpTestHelpers.createRemoteCommandResponse(type: .JSON, commandId: "firebase", payload: payload) {
+            firebaseCommand.completion(response)
+            XCTAssertNotNil(firebaseInstance.defaultParameters)
+        }
+        expect.fulfill()
+        wait(for: [expect], timeout: 2.0)
+    }
+    
+    func testSetDefaultParametersFromTag() {
+        let expect = expectation(description: "set user id should not run")
+        let defaultParameters: [String: Any]? = ["defaultParam1": "defaultValue1"]
+        let payload: [String: Any] = ["command_name": "setdefaultparameters", "firebase_default_params": defaultParameters as Any]
+        if let response = HttpTestHelpers.createRemoteCommandResponse(type: .JSON, commandId: "firebase", payload: payload) {
+            firebaseCommand.completion(response)
+            XCTAssertNotNil(firebaseInstance.defaultParameters)
         }
         expect.fulfill()
         wait(for: [expect], timeout: 2.0)
