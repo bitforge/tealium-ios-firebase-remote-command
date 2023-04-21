@@ -14,26 +14,22 @@
 		15913F2F2779CCFF0051BCB2 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F272779CCFF0051BCB2 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
 		15913F302779CCFF0051BCB2 /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F282779CCFF0051BCB2 /* FirebaseAnalytics.xcframework */; };
 		15913F312779CCFF0051BCB2 /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F292779CCFF0051BCB2 /* FirebaseCore.xcframework */; };
-		15913F322779CCFF0051BCB2 /* FirebaseCoreDiagnostics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F2A2779CCFF0051BCB2 /* FirebaseCoreDiagnostics.xcframework */; };
 		15913F332779CCFF0051BCB2 /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F2B2779CCFF0051BCB2 /* FirebaseInstallations.xcframework */; };
 		15913F342779CCFF0051BCB2 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F2C2779CCFF0051BCB2 /* GoogleUtilities.xcframework */; };
-		15913F352779CCFF0051BCB2 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F2D2779CCFF0051BCB2 /* GoogleDataTransport.xcframework */; };
 		15913F432779CD080051BCB2 /* TealiumRemoteCommands.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F372779CD070051BCB2 /* TealiumRemoteCommands.xcframework */; };
-		15913F472779CD080051BCB2 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F3B2779CD070051BCB2 /* PromisesObjC.xcframework */; };
 		15913F492779CD080051BCB2 /* TealiumCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F3D2779CD070051BCB2 /* TealiumCore.xcframework */; };
 		15913F4C2779CD080051BCB2 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F402779CD080051BCB2 /* nanopb.xcframework */; };
 		15913F4E2779CD3A0051BCB2 /* FirebaseAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F282779CCFF0051BCB2 /* FirebaseAnalytics.xcframework */; };
 		15913F4F2779CD3A0051BCB2 /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F292779CCFF0051BCB2 /* FirebaseCore.xcframework */; };
-		15913F502779CD3A0051BCB2 /* FirebaseCoreDiagnostics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F2A2779CCFF0051BCB2 /* FirebaseCoreDiagnostics.xcframework */; };
 		15913F512779CD3A0051BCB2 /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F2B2779CCFF0051BCB2 /* FirebaseInstallations.xcframework */; };
 		15913F522779CD3A0051BCB2 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F262779CCFF0051BCB2 /* GoogleAppMeasurement.xcframework */; };
 		15913F532779CD3A0051BCB2 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F272779CCFF0051BCB2 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
-		15913F542779CD3A0051BCB2 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F2D2779CCFF0051BCB2 /* GoogleDataTransport.xcframework */; };
 		15913F552779CD3A0051BCB2 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F2C2779CCFF0051BCB2 /* GoogleUtilities.xcframework */; };
 		15913F562779CD3A0051BCB2 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F402779CD080051BCB2 /* nanopb.xcframework */; };
-		15913F572779CD3A0051BCB2 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F3B2779CD070051BCB2 /* PromisesObjC.xcframework */; };
 		15913F5D2779CD3A0051BCB2 /* TealiumCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F3D2779CD070051BCB2 /* TealiumCore.xcframework */; };
 		15913F622779CD3A0051BCB2 /* TealiumRemoteCommands.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15913F372779CD070051BCB2 /* TealiumRemoteCommands.xcframework */; };
+		15E0972529F2C10400EE9672 /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E0972429F2C10400EE9672 /* FBLPromises.xcframework */; };
+		15E0972629F2C10400EE9672 /* FBLPromises.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E0972429F2C10400EE9672 /* FBLPromises.xcframework */; };
 		CF3277AD2522962E00696BB4 /* FirebaseConstants.swift in Headers */ = {isa = PBXBuildFile; fileRef = CF6C450D25199951002648A0 /* FirebaseConstants.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF3277AF2522962E00696BB4 /* FirebaseRemoteCommand.swift in Headers */ = {isa = PBXBuildFile; fileRef = CF6C450E25199951002648A0 /* FirebaseRemoteCommand.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF3277B02522962E00696BB4 /* FirebaseInstance.swift in Headers */ = {isa = PBXBuildFile; fileRef = CF6C450F25199952002648A0 /* FirebaseInstance.swift */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,16 +82,14 @@
 		15913F272779CCFF0051BCB2 /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurementIdentitySupport.xcframework; path = Carthage/Build/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
 		15913F282779CCFF0051BCB2 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Carthage/Build/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
 		15913F292779CCFF0051BCB2 /* FirebaseCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCore.xcframework; path = Carthage/Build/FirebaseCore.xcframework; sourceTree = "<group>"; };
-		15913F2A2779CCFF0051BCB2 /* FirebaseCoreDiagnostics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseCoreDiagnostics.xcframework; path = Carthage/Build/FirebaseCoreDiagnostics.xcframework; sourceTree = "<group>"; };
 		15913F2B2779CCFF0051BCB2 /* FirebaseInstallations.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseInstallations.xcframework; path = Carthage/Build/FirebaseInstallations.xcframework; sourceTree = "<group>"; };
 		15913F2C2779CCFF0051BCB2 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = Carthage/Build/GoogleUtilities.xcframework; sourceTree = "<group>"; };
-		15913F2D2779CCFF0051BCB2 /* GoogleDataTransport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleDataTransport.xcframework; path = Carthage/Build/GoogleDataTransport.xcframework; sourceTree = "<group>"; };
 		15913F372779CD070051BCB2 /* TealiumRemoteCommands.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TealiumRemoteCommands.xcframework; path = Carthage/Build/TealiumRemoteCommands.xcframework; sourceTree = "<group>"; };
-		15913F3B2779CD070051BCB2 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = Carthage/Build/PromisesObjC.xcframework; sourceTree = "<group>"; };
 		15913F3D2779CD070051BCB2 /* TealiumCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TealiumCore.xcframework; path = Carthage/Build/TealiumCore.xcframework; sourceTree = "<group>"; };
 		15913F402779CD080051BCB2 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = Carthage/Build/nanopb.xcframework; sourceTree = "<group>"; };
 		15914AE4277A2BD80051BCB2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15914AE7277A2BE10051BCB2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E0972429F2C10400EE9672 /* FBLPromises.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBLPromises.xcframework; path = Carthage/Build/FBLPromises.xcframework; sourceTree = "<group>"; };
 		CF6C44CB2519986B002648A0 /* TealiumFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TealiumFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6C44D42519986B002648A0 /* TealiumFirebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TealiumFirebaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6C44EA25199905002648A0 /* TealiumFirebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TealiumFirebase.h; sourceTree = "<group>"; };
@@ -115,15 +109,13 @@
 			files = (
 				15913F4E2779CD3A0051BCB2 /* FirebaseAnalytics.xcframework in Frameworks */,
 				15913F4F2779CD3A0051BCB2 /* FirebaseCore.xcframework in Frameworks */,
-				15913F502779CD3A0051BCB2 /* FirebaseCoreDiagnostics.xcframework in Frameworks */,
 				15913F512779CD3A0051BCB2 /* FirebaseInstallations.xcframework in Frameworks */,
 				15913F522779CD3A0051BCB2 /* GoogleAppMeasurement.xcframework in Frameworks */,
 				151C39CB2844D6B300868096 /* FirebaseCoreInternal.xcframework in Frameworks */,
 				15913F532779CD3A0051BCB2 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
-				15913F542779CD3A0051BCB2 /* GoogleDataTransport.xcframework in Frameworks */,
 				15913F552779CD3A0051BCB2 /* GoogleUtilities.xcframework in Frameworks */,
 				15913F562779CD3A0051BCB2 /* nanopb.xcframework in Frameworks */,
-				15913F572779CD3A0051BCB2 /* PromisesObjC.xcframework in Frameworks */,
+				15E0972529F2C10400EE9672 /* FBLPromises.xcframework in Frameworks */,
 				15913F5D2779CD3A0051BCB2 /* TealiumCore.xcframework in Frameworks */,
 				15913F622779CD3A0051BCB2 /* TealiumRemoteCommands.xcframework in Frameworks */,
 			);
@@ -138,15 +130,13 @@
 				15913F2F2779CCFF0051BCB2 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
 				15913F332779CCFF0051BCB2 /* FirebaseInstallations.xcframework in Frameworks */,
 				15913F342779CCFF0051BCB2 /* GoogleUtilities.xcframework in Frameworks */,
-				15913F352779CCFF0051BCB2 /* GoogleDataTransport.xcframework in Frameworks */,
 				15913F432779CD080051BCB2 /* TealiumRemoteCommands.xcframework in Frameworks */,
 				15913F492779CD080051BCB2 /* TealiumCore.xcframework in Frameworks */,
-				15913F322779CCFF0051BCB2 /* FirebaseCoreDiagnostics.xcframework in Frameworks */,
 				15913F302779CCFF0051BCB2 /* FirebaseAnalytics.xcframework in Frameworks */,
+				15E0972629F2C10400EE9672 /* FBLPromises.xcframework in Frameworks */,
 				15913F312779CCFF0051BCB2 /* FirebaseCore.xcframework in Frameworks */,
 				151C39CC2844D6B300868096 /* FirebaseCoreInternal.xcframework in Frameworks */,
 				CF71DB7D251BB8D700E96CC4 /* TealiumFirebase.framework in Frameworks */,
-				15913F472779CD080051BCB2 /* PromisesObjC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,16 +209,14 @@
 				15913F282779CCFF0051BCB2 /* FirebaseAnalytics.xcframework */,
 				15913F292779CCFF0051BCB2 /* FirebaseCore.xcframework */,
 				151C39CA2844D6B300868096 /* FirebaseCoreInternal.xcframework */,
-				15913F2A2779CCFF0051BCB2 /* FirebaseCoreDiagnostics.xcframework */,
 				15913F2B2779CCFF0051BCB2 /* FirebaseInstallations.xcframework */,
 				15913F262779CCFF0051BCB2 /* GoogleAppMeasurement.xcframework */,
 				15913F272779CCFF0051BCB2 /* GoogleAppMeasurementIdentitySupport.xcframework */,
-				15913F2D2779CCFF0051BCB2 /* GoogleDataTransport.xcframework */,
 				15913F2C2779CCFF0051BCB2 /* GoogleUtilities.xcframework */,
 				15913F402779CD080051BCB2 /* nanopb.xcframework */,
-				15913F3B2779CD070051BCB2 /* PromisesObjC.xcframework */,
 				15913F3D2779CD070051BCB2 /* TealiumCore.xcframework */,
 				15913F372779CD070051BCB2 /* TealiumRemoteCommands.xcframework */,
+				15E0972429F2C10400EE9672 /* FBLPromises.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -515,6 +503,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build",
@@ -548,6 +537,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build",
