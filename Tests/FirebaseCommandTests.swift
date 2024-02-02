@@ -371,6 +371,7 @@ class FirebaseCommandTests: XCTestCase {
         let actual = firebaseCommand.items(from: payload)
         XCTAssertTrue(NSDictionary(dictionary: actual).isEqual(to:  expected))
     }
+
     func testPerformanceItemsWhenProductVariablesNotArray() {
             let count = 1000
             let payload = ["items": [
@@ -381,19 +382,34 @@ class FirebaseCommandTests: XCTestCase {
                             "param_item_variant": Array(repeating: "abc-blue-123", count: count),
                             "param_item_brand": Array(repeating: "acme", count: count),
                             "param_price": Array(repeating: 10.99, count: count)]]
-            
-            let expected: [String: Any] = ["items": Array(repeating:
-                            ["item_id": "abc123",
-                                "item_name": "cool running shoes",
-                                "quantity": 1,
-                                "item_category": "shoes",
-                                "item_variant": "abc-blue-123",
-                                "item_brand": "acme",
-                             "price": 10.99], count: count)]
             measure {
                 let _ = firebaseCommand.items(from: payload)
             }
-            
-    //        XCTAssertTrue(NSDictionary(dictionary: actual).isEqual(to:  expected))
         }
+
+    func testConsentTypeParsing() {
+        XCTAssertEqual(ConsentType.from("analytics_storage"), ConsentType.analyticsStorage)
+        XCTAssertEqual(ConsentType.from(ConsentType.analyticsStorage.rawValue), ConsentType.analyticsStorage)
+        XCTAssertEqual(ConsentType.from("ad_storage"), ConsentType.adStorage)
+        XCTAssertEqual(ConsentType.from(ConsentType.adStorage.rawValue), ConsentType.adStorage)
+        XCTAssertEqual(ConsentType.from("ad_personalization").rawValue, "ad_personalization")
+        XCTAssertEqual(ConsentType.from("ad_personalization").rawValue, "ad_personalization")
+        XCTAssertEqual(ConsentType.from("ad_user_data").rawValue, "ad_user_data")
+        XCTAssertEqual(ConsentType.from("ad_user_data").rawValue, "ad_user_data")
+    }
+
+    func testConsentTypeParsingWrongKey() {
+        XCTAssertEqual(ConsentType.from("wrong_key").rawValue, "wrong_key")
+    }
+
+    func testConsentStatusParsing() {
+        XCTAssertEqual(ConsentStatus.from("granted"), ConsentStatus.granted)
+        XCTAssertEqual(ConsentStatus.from(ConsentStatus.granted.rawValue), ConsentStatus.granted)
+        XCTAssertEqual(ConsentStatus.from("denied"), ConsentStatus.denied)
+        XCTAssertEqual(ConsentStatus.from(ConsentStatus.denied.rawValue), ConsentStatus.denied)
+    }
+
+    func testConsentStatusParsingWrongKey() {
+        XCTAssertEqual(ConsentStatus.from("wrong_key").rawValue, "wrong_key")
+    }
 }
