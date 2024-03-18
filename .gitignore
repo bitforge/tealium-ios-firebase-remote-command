@@ -66,3 +66,5 @@ TealiumFirebaseExample/Pods/
 
 tealium-xcframeworks/
 tealium.xcframework.zip
+
+GoogleService-Info.plist
