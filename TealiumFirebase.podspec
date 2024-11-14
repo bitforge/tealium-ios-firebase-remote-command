@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     s.platform     = :ios, "12.0"
 
     # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-    s.source       = { :git => "https://github.com/Tealium/tealium-ios-firebase-remote-command.git", :tag => "#{s.version}" }
+    s.source       = { :git => 'https://github.com/bitforge/tealium-ios-firebase-remote-command.git', :branch => 'main' }
 
     # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
     s.ios.source_files      = "Sources/*.{swift}"
